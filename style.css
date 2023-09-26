@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family:"Dosis", sans-serif;
+}
+
+body{
+    background-color: black;
+    font-size: 20px;
+}
+
+.topo{ 
+    /*A classe “topo” servirá para deixar a largura do topo da ficha com 
+    o tamanho total de uma janela, não importando a sua largura. 
+    Para fazer isso, altere os elementos para “display: flex;”, 
+    assim eles se tornam maleáveis e podem ser posicionados com seus 
+    comandos.*/
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+}
+
+.conteiner-topo{
+    /*A classe “conteiner-topo”, além de ajustar largura e altura, 
+    tem como finalidade alterar a cor e criar uma divisão que seja de 
+    três colunas – por isso o “display: grid;”.*/
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 900px;
+    height: 150px;
+}
+
+.conteiner-topo>div{
+    padding:10px; /*espaçamento*/
+}
+
+.conteiner-topo>div p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.conteiner-topo>div input{
+    height: 30px;
+    width: 200px;
+    border-radius:5px; /*bordinha arredondada*/
+    padding-left:10px;
+}
